@@ -1,0 +1,32 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #2B2A27;
+  font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*----------------------------
+mainvisurar
+------------------------------*/
+#recipedaiary {
+  padding: 80px 0;
+  margin: 0 auto;
+  max-width: 574px;
+  text-align: center;
+}
+#recipedaiary h1 {
+  margin-bottom: 20px;
+}
+
+.foodphot ol {
+  display: flex;
+}
+.foodphot img {
+  height: 500px;
+}/*# sourceMappingURL=style.css.map */

@@ -8,3 +8,26 @@ html {
   img {
     max-width: 100%;
   }
+
+  /*----------------------------
+  mainvisurar
+  ------------------------------*/
+
+  #recipedaiary {
+    padding: 80px 0;
+    margin: 0 auto;
+    max-width: 574px;
+    text-align: center;
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .foodphot {
+    ol {
+      display: flex;
+    }
+    img {
+      height: 500px;
+    }
+  }
