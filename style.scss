@@ -8,6 +8,9 @@ html {
   img {
     max-width: 100%;
   }
+  li {
+    list-style: none;
+  }
 
   /*----------------------------
   mainvisurar
@@ -20,14 +23,53 @@ html {
     text-align: center;
     h1 {
       margin-bottom: 20px;
+      font-size: 2rem;
     }
   }
 
   .foodphot {
-    ol {
-      display: flex;
+    margin-bottom: 60px;
+    ul {
+        display: flex;
+        height: 500px;
+        overflow: hidden
     }
     img {
-      height: 500px;
+        flex: 1;
+        object-fit: cover;
+    }
+  }
+  
+  .recipe-list {
+    width: 237px;
+    height: 57px;
+    border: 1px solid #2B2A27;
+    padding: 22px 60px;
+    margin: 0 auto;
+    a {
+        font-size: 0.875rem;
+        color: #2B2A27;
+        text-decoration: none;
+    }
+  }
+
+  .link {
+    margin-top: 80px;
+    ul {
+        display: flex;
+        justify-content: center;
+        a {
+            margin: 0 10.5px;
+            color: #2B2A27;
+            font-size: 0.750rem;
+        }
+    }
+  }
+  footer {
+    p {
+        color: #2B2A27;
+        font-size: 0.750rem;
+        text-align: center;
+        margin: 20px 0;
     }
   }
