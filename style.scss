@@ -3,7 +3,7 @@ html {
   }
   body {
     color: #2B2A27;
-    font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+    font-family: Arial, Hiragino Sans, Meiryo, sans-serif;
   }
   img {
     max-width: 100%;
@@ -16,19 +16,36 @@ html {
   mainvisurar
   ------------------------------*/
 
+  .mainvisual {
+    margin-bottom: -5px;
+    img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    }
+  }
+
   #recipedaiary {
     padding: 80px 0;
     margin: 0 auto;
     max-width: 574px;
     text-align: center;
     h1 {
-      margin-bottom: 20px;
+      margin-left: -2px;
+      margin-bottom: 15px;
       font-size: 2rem;
     }
   }
 
+  .explanation {
+    .text1 {
+      margin-left: -14px;
+    }
+  }
+
   .foodphot {
-    margin-bottom: 60px;
+    margin-top: -5px;
+    margin-bottom: 62px;
     ul {
         display: flex;
         height: 500px;
@@ -41,27 +58,31 @@ html {
   }
   
   .recipe-list {
-    width: 237px;
-    height: 57px;
+    width: 232px;
+    height: 50px;
     border: 1px solid #2B2A27;
-    padding: 22px 60px;
-    margin: 0 auto;
+    text-align: center;
+    line-height: 49px;
+    margin: 0px auto 10px auto;
     a {
         font-size: 0.875rem;
         color: #2B2A27;
         text-decoration: none;
+        display: block;
     }
   }
 
   .link {
-    margin-top: 80px;
+    margin-top: 96px;
     ul {
         display: flex;
         justify-content: center;
         a {
-            margin: 0 10.5px;
+          text-decoration: none;
+            margin: 0 10px;
             color: #2B2A27;
             font-size: 0.750rem;
+            border-bottom: 1px solid;
         }
     }
   }
@@ -71,4 +92,40 @@ html {
         font-size: 0.750rem;
         text-align: center;
         margin: 20px 0;
-    }}
+    }
+  }
+
+  @media (max-width:834px) { 
+    
+    .mainvisual {
+      img {
+      height: 600px;
+      object-fit: cover;
+    }
+    }
+    #recipedaiary {
+      h1 {
+        margin-left:  0;
+      }
+    }
+    .explanation {
+      padding: 0 28px;
+      .text2 {
+
+      }
+    }
+
+    .foodphot {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+      }
+      li {
+        height: 500px;
+      }
+      img {
+        vertical-align: bottom;
+      }
+    }
+  }
