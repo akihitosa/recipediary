@@ -95,6 +95,96 @@ html {
     }
   }
 
+/*--------------------------------------
+recipe
+--------------------------------------*/
+
+  .recipe-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .recipetable {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      vertical-align: bottom;
+    }
+  }
+
+  #cookingabout {
+    width: 50%;
+    padding: 34px 4.7% 34px 5%;
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 32px;
+      padding-right: 10px;
+    }
+  }
+
+  @mixin border($color:#CCCCCC) {
+    border-bottom: 1px solid $color;
+  }
+  @mixin margin26 {
+    margin-bottom: 26px;
+  }
+  @mixin margin12 {
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+  }
+
+  .item1 {
+    margin-bottom: 31px;
+    h2 {
+      margin-bottom: 22px;
+      @include border;
+      font-size: 1.25rem;
+    }
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 15px;
+    }
+    dd {
+      width: 85%;
+      @include border;
+      @include margin12;
+    }
+    dt {
+      width: 15%;
+      @include border;
+      @include margin12;
+      text-align: right
+    }
+  }
+
+  .item2 {
+    h2 {
+      @include border;
+      margin-bottom: 21px;
+      font-size: 1.25rem;
+      line-height: 26.6px
+    }
+    ol {
+      line-height: 16px;
+    }
+    li {
+      @include border;
+      @include margin12;
+      list-style-type: decimal;
+      margin-left: 17px;
+    }
+  }
+
+
+  /*-----------------------------------
+  responsive
+  -----------------------------------*/
   @media (max-width:834px) { 
     
     .mainvisual {
@@ -110,9 +200,6 @@ html {
     }
     .explanation {
       padding: 0 28px;
-      .text2 {
-
-      }
     }
 
     .foodphot {
@@ -128,4 +215,54 @@ html {
         vertical-align: bottom;
       }
     }
+
+  .container {
+    flex-direction: column;
   }
+  .recipetable {
+    width: 100%;
+  }
+  #cookingabout {
+    width: 100%;
+  }
+  .item1 {
+    dd {
+      width: 90%;
+    }
+    dt {
+      width: 10%;
+    }
+  }
+    /*-----------------------------------
+  responsive-recipe
+  -----------------------------------*/
+.recipe-container {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.recipetable {
+  img {
+    height: auto;
+  }
+}
+#cookingabout {
+  p {
+    padding-right: 1px;
+  }
+}
+.item1 {
+  dd {
+    width: 92%;
+  }
+  dt {
+    width: 8%;
+  }
+}
+footer {
+  p {
+    margin: 19px 0;
+  }
+}
+
+}

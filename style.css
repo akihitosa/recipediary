@@ -96,6 +96,86 @@ footer p {
   margin: 20px 0;
 }
 
+/*--------------------------------------
+recipe
+--------------------------------------*/
+.recipe-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.recipetable {
+  width: 50%;
+}
+.recipetable img {
+  width: 100%;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
+#cookingabout {
+  width: 50%;
+  padding: 34px 4.7% 34px 5%;
+}
+#cookingabout h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+#cookingabout p {
+  margin-bottom: 32px;
+  padding-right: 10px;
+}
+
+.item1 {
+  margin-bottom: 31px;
+}
+.item1 h2 {
+  margin-bottom: 22px;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 1.25rem;
+}
+.item1 dl {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 15px;
+}
+.item1 dd {
+  width: 85%;
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 7px;
+  padding-bottom: 5px;
+}
+.item1 dt {
+  width: 15%;
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 7px;
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+.item2 h2 {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 21px;
+  font-size: 1.25rem;
+  line-height: 26.6px;
+}
+.item2 ol {
+  line-height: 16px;
+}
+.item2 li {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 7px;
+  padding-bottom: 5px;
+  list-style-type: decimal;
+  margin-left: 17px;
+}
+
+/*-----------------------------------
+responsive
+-----------------------------------*/
 @media (max-width: 834px) {
   .mainvisual img {
     height: 600px;
@@ -118,5 +198,42 @@ footer p {
   }
   .foodphot img {
     vertical-align: bottom;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .recipetable {
+    width: 100%;
+  }
+  #cookingabout {
+    width: 100%;
+  }
+  .item1 dd {
+    width: 90%;
+  }
+  .item1 dt {
+    width: 10%;
+  }
+  /*-----------------------------------
+  responsive-recipe
+  -----------------------------------*/
+  .recipe-container {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .recipetable img {
+    height: auto;
+  }
+  #cookingabout p {
+    padding-right: 1px;
+  }
+  .item1 dd {
+    width: 92%;
+  }
+  .item1 dt {
+    width: 8%;
+  }
+  footer p {
+    margin: 19px 0;
   }
 }/*# sourceMappingURL=style.css.map */
